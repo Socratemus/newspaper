@@ -15,7 +15,9 @@ class AppKernel extends Kernel
             new Symfony\Bundle\SwiftmailerBundle\SwiftmailerBundle(),
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
+            //new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
             new AppBundle\AppBundle(),
+            new AdminBundle\AdminBundle(), 
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
@@ -47,4 +49,12 @@ class AppKernel extends Kernel
     {
         $loader->load($this->getRootDir().'/config/config_'.$this->getEnvironment().'.yml');
     }
+    
+    
+    public function init()
+    {
+        date_default_timezone_set( 'Europe/Bucharest' );
+        parent::init();
+    }
+    
 }

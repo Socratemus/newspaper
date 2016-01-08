@@ -1,0 +1,456 @@
+/**
+ Most common classes
+*/
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+
+html {
+    position: relative;
+    min-height: 100%;
+    height: 100%;
+}
+
+.app{
+    position: relative;
+    min-height: 100%;
+    height: 100%;
+    margin : 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+header.root{
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    height : 34px; width : 100%; 
+    position : fixed;
+    z-index : 10;
+    background-color : #588BB9;
+    border-bottom: 1px solid #507698;
+}
+
+content.root{
+    padding-top : 34px;
+    position: relative;
+    display : block;
+    height: calc(100% - 34px);
+}
+
+content.root > .inner {
+    height: 100%;
+    background: #FFF;
+    margin-top: 0px;
+    margin: 0px 0px;
+    overflow: auto;
+}
+
+footer.root {
+    background-color : gray; color : white;
+    height: 34px;
+    line-height : 34px;
+}
+
+footer.root > .inner {
+    padding-left : 10px; padding-right : 10px;
+    font-size : 80%;
+}
+footer.root > .inner p {margin : 0;}
+
+nav{
+    /*background-color : #FFF;*/
+}
+nav ul a {
+    color : #F3F3F3;
+}
+nav ul a:hover,nav ul a:active,nav ul a:focus  {
+    color : #F3F3F3;
+    text-decoration : none;
+}
+
+.dropdown-menu{
+    margin-top: -1px;
+    border-radius: 0;
+    padding: 0;
+}
+.dropdown-menu.right{
+    left : inherit; right : 0;
+}
+.dropdown-menu.ui-action{
+    min-width : 100%;
+    margin-top: 4px;
+    border-radius : 5px;
+}
+.dropdown-menu.ui-action > li > a { 
+    padding: 2px 15px;
+    font-size: 13px;
+    border-bottom: 1px solid #DFDFDF;
+}
+.dropdown-menu.ui-action > li > a > i {
+    margin-right: 4px;
+    border-right: 1px solid #C4C4C4;
+    padding-right: 5px;
+    width: 20px;    
+}
+.dropdown-menu.ui-action > li:last-child > a {
+    border-bottom : 0;
+}
+.dropdown-menu.ui-action:before{
+    bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+    
+    border-color: rgba(223, 223, 223, 0);
+	border-bottom-color: #DFDFDF;
+	border-width: 8px;
+	margin-left: -8px;
+}
+.dropdown-menu.ui-action:after{
+    bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	
+    border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #ffffff;
+	border-width: 7px;
+	margin-left: -7px;
+}
+
+.box {
+    background : #FFF;
+    min-height : 50px;
+    margin : 5px;
+    box-shadow: -1px 1px 3px 0px rgba(0,0,0,.1);
+    padding : 10px;
+}
+
+.box.large{
+    min-height : 250px;
+}
+
+/******************************************************************************/
+.mt0{
+    margin-top : 0px;
+}
+
+.mt5{
+    margin-top : 5px;
+}
+.mt10{
+    margin-top : 10px;
+}
+.mt15{
+    margin-top : 15px;
+}
+.mt20{
+    margin-top : 20px;
+}
+.mt25{
+    margin-top : 25px;
+}
+.mt30{
+    margin-top : 30px;
+}
+
+.mt35{
+    margin-top : 35px;
+}
+.mt40{
+    margin-top : 40px;
+}
+.mt45{
+    margin-top : 45px;
+}
+.mt50{
+    margin-top : 50px;
+}
+
+.mb0{
+    margin-bottom : 0px;
+}
+
+.mb5{
+    margin-bottom : 5px;
+}
+.mb10{
+    margin-bottom : 10px;
+}
+.mb15{
+    margin-bottom : 15px;
+}
+.mb20{
+    margin-bottom : 20px;
+}
+.mb25{
+    margin-bottom : 25px;
+}
+.mb30{
+    margin-bottom : 30px;
+}
+
+.mb35{
+    margin-bottom : 35px;
+}
+.mb40{
+    margin-bottom : 40px;
+}
+.mb45{
+    margin-bottom : 45px;
+}
+.mb50{
+    margin-bottom : 50px;
+}
+
+.ml0{
+    margin-left : 0px;
+}
+.ml5{
+    margin-left : 5px;
+}
+
+.ml10{
+    margin-left : 10px;
+}
+
+.ml15{
+    margin-left : 15px;
+}
+
+.ml20{
+    margin-left : 20px;
+}
+
+.ml25{
+    margin-left : 25px;
+}
+
+.ml30{
+    margin-left : 30px;
+}
+
+.ml35{
+    margin-left : 35px;
+}
+
+.ml40{
+    margin-left : 40px;
+}
+
+.ml45{
+    margin-left : 45px;
+}
+
+.ml50{
+    margin-left : 50px;
+}
+
+.mr0{
+    margin-right : 0px;
+}
+.mr5{
+    margin-right : 5px;
+}
+
+.mr10{
+    margin-right : 10px;
+}
+
+.mr15{
+    margin-right : 15px;
+}
+
+.mr20{
+    margin-right : 20px;
+}
+
+.mr25{
+    margin-right : 25px;
+}
+
+.mr30{
+    margin-right : 30px;
+}
+
+.mr35{
+    margin-right : 35px;
+}
+
+.mr40{
+    margin-right : 40px;
+}
+
+.mr45{
+    margin-right : 45px;
+}
+
+.mr50{
+    margin-right : 50px;
+}
+
+.pt0{
+    padding-top : 0px;
+}
+.pt5{
+    padding-top : 5px;
+}
+.pt10{
+    padding-top : 10px;
+}
+.pt15{
+    padding-top : 15px;
+}
+.pt20{
+    padding-top : 20px;
+}
+.pt25{
+    padding-top : 25px;
+}
+.pt30{
+    padding-top : 30px;
+}
+.pt35{
+    padding-top : 35px;
+}
+.pt40{
+    padding-top : 40px;
+}
+.pt45{
+    padding-top : 45px;
+}
+.pt50{
+    padding-top : 50px;
+}
+
+.pb0{
+    padding-bottom: 0px; 
+}
+.pb5{
+    padding-bottom: 5px; 
+}
+.pb10{
+    padding-bottom: 10px; 
+}
+.pb15{
+    padding-bottom: 15px; 
+}
+.pb20{
+    padding-bottom: 20px; 
+}
+.pb25{
+    padding-bottom: 25px; 
+}
+.pb30{
+    padding-bottom: 30px; 
+}
+.pb35{
+    padding-bottom: 35px; 
+}
+.pb40{
+    padding-bottom: 40px; 
+}
+.pb45{
+    padding-bottom: 45px; 
+}
+.pb50{
+    padding-bottom: 50px; 
+}
+
+.pl0{
+    padding-left: 0px;
+}
+.pl5{
+    padding-left: 5px;
+}
+.pl10{
+    padding-left: 10px;
+}
+.pl15{
+    padding-left: 15px;
+}
+.pl20{
+    padding-left: 20px;
+}
+.pl25{
+    padding-left: 25px;
+}
+.pl30{
+    padding-left: 30px;
+}
+.pl35{
+    padding-left: 35px;
+}
+.pl40{
+    padding-left: 40px;
+}
+.pl45{
+    padding-left: 45px;
+}
+.pl50{
+    padding-left: 50px;
+}
+
+.pr0{
+    padding-right: 0px;
+}
+.pr5{
+    padding-right: 5px;
+}
+.pr10{
+    padding-right: 10px;
+}
+.pr15{
+    padding-right: 15px;
+}
+.pr20{
+    padding-right: 20px;
+}
+.pr25{
+    padding-right: 25px;
+}
+.pr30{
+    padding-right: 30px;
+}
+.pr35{
+    padding-right: 35px;
+}
+.pr40{
+    padding-right: 40px;
+}
+.pr45{
+    padding-right: 45px;
+}
+.pr50{
+    padding-right: 50px;
+}
+
+.lh10 {
+    line-height : 10px;
+}
+.lh20 {
+    line-height : 20px;
+}
+.lh30 {
+    line-height : 30px;
+}
+.lh40 {
+    line-height : 40px;
+}
+.lh50 {
+    line-height : 50px;
+}
+
+.extended {
+    padding-left : 0;
+    padding-right : 0;
+}
+/******************************************************************************/
+small {
+    font-size : 75%;
+}

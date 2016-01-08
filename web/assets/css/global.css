@@ -1,0 +1,198 @@
+/**
+ Admin global css.
+*/
+
+.logo{
+    width : 220px;
+    height : 34px;
+    display : inline-block;
+    /*background : rgba(0,0,0,.05);*/
+    border-right : 1px solid lightgray;
+    position : absolute;
+}
+
+.main-nav{
+    display : inline-block;
+    width : 100%;
+    padding-left : 220px;
+    text-align : right;
+}
+
+#MainActions{
+    height : 34px;
+    list-style : none; padding : 0; margin : 0;
+}
+
+#MainActions > li {
+    display : inline-block;
+    height : 100%;
+    vertical-align : middle;
+}
+#MainActions > li a {
+    display :  block;
+    padding: 8px 10px;
+
+}
+/* Custom elements */
+/******************************************************************************/
+.btn.custom {
+    outline : none;
+    font-size: 13px;
+    border-radius: 0px !important;
+    background: #B0DFED !important;
+    padding: 1px 30px !important;
+    color: #4C4C4C;
+    border: 0!important;
+    border-top: 1px solid rgba(255, 255, 255, 0.5)!important;
+    box-shadow: 0px 3px 7px -3px rgba(0, 0, 0, 0.9);
+    line-height: 23px;
+    transition : all .1s ease;
+}
+.btn.custom:active{
+    outline : none;
+    box-shadow : none;
+}
+.btn.is-date{
+    padding: 2px 10px;
+    background-color: white;
+}
+
+input[type=text], input[type=email], input[type=date], textarea {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    font-size: 12px!important;
+    color: #858585;
+    box-shadow: 0 1px 0 #fff;
+    -webkit-box-shadow: 0 1px 0 #fff;
+    -moz-box-shadow: 0 1px 0 #fff;
+    padding: 6px 7px;
+    border: 1px solid #d7d7d7;
+    /*border-top : 0px;border-right : 0px; border-left : 0px;*/
+    display: inline-block;
+    background: #FFF;
+    height: 26px;
+    border-radius : 0px;
+}
+input[type=text]:focus, input[type=email]:focus, input[type=date]:focus, textarea:focus{
+    box-shadow : none;    
+} 
+
+
+/******************************************************************************/
+
+
+/* Listing Page */
+/******************************************************************************/
+
+.ui-content{
+    padding : 10px;
+}
+
+.ui-list-header{
+    background-color : #F3F3F3;
+    border-top: 1px solid #DDD;
+    border-bottom: 1px solid #CCC;
+    padding : 3px;
+}
+.ui-list-header > h2 {
+    margin : 0;
+    font-size : 2.6rem;
+}
+
+.ui-list-content{
+    
+}
+.ui-list-content .ui-list-content-head{
+    font-weight : bold;
+    font-family : Open Sans;
+    color: #8E8E8E;
+    font-size: 12px;
+}
+.ui-list-content .ui-list-content-head > div{
+    padding-top : 5px; padding-bottom : 5px;
+    border-bottom: 1px solid #DFDFDF;
+}
+.ui-list-content .ui-list-content-row{
+    border-bottom: 1px solid #DFDFDF;
+}
+.ui-list-content .ui-list-content-row > div{
+    /*border-right : 1px solid #DFDFDF;*/
+}
+.ui-list-content .ui-list-content-footer{
+    background-color: #F3F3F3;
+    padding: 10px 0px;
+    border-bottom: 1px solid #CCC;
+}
+.ui-list-content .ui-action-control{
+    color : orange;
+}
+
+
+/* Form Page */
+/******************************************************************************/
+.form-title {
+    background: rgba(0, 0, 0, 0.05);
+    position: relative;
+    border-top: 1px solid #DDD;
+    border-bottom: 1px solid #CCC;
+    padding: 2px 30px 5px 30px;
+    text-shadow: 0 1px 0 #FFF;
+    /* margin-bottom: 15px; */
+}
+.form-title h3 {
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 9px;
+    /* margin-bottom: 5px; */
+    color: rgba(0, 0, 0, 0.70);
+    float: left;
+    padding-left: 25px;
+}
+
+.ui-form-content label {
+    color: #999;
+    line-height: 22px;
+    font-weight: normal;
+    font-size: 12px;
+}
+.ui-form-row {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #DDD;
+}
+
+.ui-form-row  ul {
+    margin : 0 ; padding : 0;
+    list-style : none;
+    font-size : 11px; font-style : italic;
+    color : #CE0B0B;
+    display : inline-block;
+}
+.ui-form-row  ul li {
+    background-color : pink;
+    margin : 1px 0px;
+    padding: 1px 7px;
+    border-radius: 2px;
+    position : relative;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.ui-form-row  ul li:before{
+    content : "\f071"; margin-right : 5px;
+    /*color : yellow;*/
+    font-family : FontAwesome;
+}
+.ui-form-row ul li:after{
+    content: "";
+    width: 3px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #CA1515;
+    display: block;
+    position: absolute;
+    z-index: 0;
+}

@@ -1,0 +1,47 @@
+{% extends 'AppBundle:layout:base.html.twig' %}
+
+{% block main %}
+    
+    <!-- 2 cols layout -->
+    
+    <div class="col-sm-7 custom-box">
+        
+        <div class="custom-floor isometric hidden">
+            
+            {% for i in 0..7 %}
+   
+            <div class="custom-box-card">
+                
+                <div class="cv-img-cover pull-left">
+                    <img src="httpz://rack.3.mshcdn.com/media/ZgkyMDE2LzAxLzA4LzBlL29iYW1hZ3VuczIuZmFlMWQuanBnCnAJdGh1bWIJOTUweDUzNCMKZQlqcGc/5ce6d069/e9c/obama-guns-2.jpg" alt="" title="" />
+                </div>
+                
+                <div class="box-card-content">
+                    <h3 class="mt0">The custom title goes in here.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                
+                <div class="box-card-controls">
+                    
+                    <small><i class="fa fa-calendar"></i> <em>Pub : 01 Jan 2015<em></small>
+                    
+                    <small class="pull-right"><i class="fa fa-comments"></i> 7 comments</small>
+                    
+                </div>
+                
+            </div>
+            {% endfor %}
+        </div>
+        
+    </div>
+    
+    <div class="col-sm-3 custom-box">
+        wow side bar
+    </div>
+    
+    <div class="col-sm-2 custom-box">
+        advertising
+    </div>
+    
+    
+{% endblock %}

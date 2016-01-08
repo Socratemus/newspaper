@@ -1,0 +1,120 @@
+{% extends 'AdminBundle:layout:index.html.twig' %}
+
+{% block main %}
+
+    <div class="ui-content">
+        
+        <div class="ui-list-header">
+            <h2>CMS System Articles list - display all</h2>    
+        </div>
+        
+        <div class="ui-list-content">
+            
+            <div class="ui-list-content-head col-xs-12 extended">
+                
+                <div class="col-xs-1">
+                     &nbsp;
+                </div>
+                
+                <div class="col-xs-1">
+                    Id 
+                </div>
+                
+                <div class="col-xs-2">
+                    Title 
+                </div>
+                
+                <div class="col-xs-2">
+                    Slug 
+                </div>
+                
+                <div class="col-xs-2">
+                    Created by 
+                </div>
+                
+                <div class="col-xs-2">
+                    Updated by 
+                </div>
+                
+                <div class="col-xs-1">
+                    Datetime 
+                </div>
+                <div class="col-xs-1">
+                    &nbsp;
+                </div>
+                
+            </div>
+            
+            <div class="ui-list-content-body col-xs-12 extended">
+                {% for i in 0..10 %}
+                <div class="ui-list-content-row col-xs-12 extended">
+                    
+                    <div class="col-xs-1 text-center">
+                     <input type="checkbox" />
+                    </div>
+                
+                
+                    <div class="col-xs-1">
+                        {{ i + 1}}
+                    </div>
+                    
+                    <div class="col-xs-2">
+                        <a href="">This is an article name how awesome is that</a>
+                    </div>
+                
+                    <div class="col-xs-2">
+                        the-slug-name-stays-in-here 
+                    </div>
+                    
+                    <div class="col-xs-2">
+                        <a href="">socratemus</a> <br />
+                        <em><small>01.01.2016</small></em>
+                    </div>
+                    
+                    <div class="col-xs-2">
+                        <a href="">socratemus</a> <br />
+                        <em><small>01.01.2016</small></em>
+                    </div>
+                    
+                    <div class="col-xs-1">
+                        01.01.2016 
+                    </div>
+                    <div class="col-xs-1 text-center" >
+                        <a href="" class="ui-action-control" data-toggle="dropdown" ><i class="fa fa-gear mt15"></i></a>
+                        <ul class="dropdown-menu right ui-action" role="menu" aria-labelledby="menu1">
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-feed"></i> Publish</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-lock"></i> Disable</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-unlock-alt"></i> Enable</a></li>
+                          {#<li role="presentation" class="divider"></li>#}
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-remove"></i> Remove</a></li>    
+                        </ul>
+                    </div>
+                    
+                </div>
+                {% endfor %}
+            </div>
+            
+            <div class="ui-list-content-footer col-xs-12 extended">
+                <div class="col-xs-5">
+                    <button><i class="fa fa-fast-backward"></i></button>
+                    <button><i class="fa fa-backward"></i></button>
+                    |
+                    Page : <input class="text-center" style="width : 40px;" type="text" value="1" /> out of 135
+                    |
+                    <button><i class="fa fa-forward"></i></button>
+                    <button><i class="fa fa-fast-forward"></i></button>
+                </div>
+                <div class="col-xs-4">
+                    
+                </div>
+                <div class="col-xs-3 text-right">
+                    <span>Displaying topics 1 - 50 of 6679</span>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+    </div>
+    
+{% endblock %}

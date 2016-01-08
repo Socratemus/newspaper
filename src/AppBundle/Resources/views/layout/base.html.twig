@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        {{ include('AppBundle:layout:head.html.twig') }}
+        <title>Demo Content Management Symfony System</title>
+    </head>
+    
+    <body>
+        
+       
+        
+        
+        <div id="Wrapper" class="container-fluid1">
+            <div class="inner">
+                {{ include('AppBundle:layout:header.html.twig') }}
+                <div id="TheContent">
+                {% block main %}
+        
+                {% endblock %}     
+                <div class="clearfix"></div>
+                </div>
+                 {{ include('AppBundle:layout:footer.html.twig') }}
+            </div>
+        
+        </div>
+        
+       
+        {{ include('AppBundle:layout:scripts.html.twig') }}
+    </body>
+</html>

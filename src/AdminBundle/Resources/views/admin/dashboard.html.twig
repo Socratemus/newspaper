@@ -1,0 +1,45 @@
+{% extends 'AdminBundle:layout:index.html.twig' %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('assets/css/adds/jquery.jqplot/jquery.jqplot.min.css') }}" />
+    {{ parent() }}
+    
+{% endblock %}
+
+{% block main %}
+    
+    <div class="dashboard-header-notification hidden">
+        Welcome to administration area.
+    </div>
+    <div class="clearfix"></div>
+    
+    <div class="box large">
+        
+        <div id="ChartObject1" class="chart-container pull-left" style="width : 300px ;height : 300px;"></div>
+        <div id="ChartObject2" class="chart-container pull-left" style="width : 300px ;height : 300px;"></div>
+        <div class="clearfix"></div>
+    </div>
+    
+    <div class="box large">
+        
+        
+        <div id="PlotCharNo1" style="height :  250px;padding : 10px"></div>
+        
+    </div>
+    
+    <div class="box large">
+        
+    </div>
+    
+    
+    <div class="clearfix"></div>
+{% endblock %}
+
+{% block javascript %}
+    
+    {{ parent() }}
+    <script type="text/javascript" src="{{ asset('assets/js/adds/jquery.jqplot/jquery.jqplot.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('assets/js/dashboard.js') }}"></script>
+    
+    
+{% endblock %}
